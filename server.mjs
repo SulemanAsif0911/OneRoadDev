@@ -351,39 +351,36 @@ wss.on('connection', (ws, req) => {
             if (d < -n / 2) d += n;
             if (d > n / 2) d -= n;
             p.progress += d;
+            // eight sectors around the lap; a lap only counts when the car has collected them
+            // all in order and then crossed the line, which is what stops a car from farming
+            // laps by reversing over the start line.
             const gateEvery = Math.max(1, Math.floor(n / 8));
-            const gate = Math.floor(idx / gateEvery);
-            const prevGate = Math.floor(prev / gateEvery);
+            const gate = Math.floor(idx / gateEvery) % 8;
+            const prevGate = Math.floor(prev / gateEvery) % 8;
+            p.sectors = p.sectors || new Set();
             if (gate !== prevGate) {
-              // moved into a new sector: validate it's the next one
               const expected = (p.cp + 1 + 8) % 8;
-              if (gate === expected || p.cp < 0) p.cp = gate;
+              if (p.cp < 0 || gate === expected) { p.cp = gate; p.sectors.add(gate); }
             }
-            // crossing the start/finish line while all sectors were collected => lap
-            const crossed = (prev > n - gateEvery * 0.5 || prev < gateEvery * 0.5) && (idx >= 0) &&
-              ((prev > n - gateEvery && idx < gateEvery) || (prev < gateEvery * 0.5 && idx > n - gateEvery * 0.5));
-            if (crossed && p.cp >= 0) {
-              const sectorSet = p.sectors || new Set();
-              sectorSet.add(p.cp);
-              p.sectors = sectorSet;
-              if (sectorSet.size >= 7) {
-                const now = Date.now();
-                const t = p.lapStart ? now - p.lapStart : 0;
-                p.sectors = new Set();
-                p.cp = -1;
-                p.lap = (p.lap || 0) + 1;
-                p.lapStart = now;
-                if (t > 3000) {
-                  p.lapTimes.push(t);
-                  p.best = p.best == null ? t : Math.min(p.best, t);
-                  broadcast(r, { t: 'lap', id: p.id, name: p.name, lap: p.lap, time: t, best: p.best });
-                }
-                if (p.lap > r.race.laps) {
-                  p.finished = true;
-                  p.finishTime = now - r.race.startedAt;
-                  broadcast(r, { t: 'event', kind: 'finish', id: p.id, name: p.name, position: [...r.players.values()].filter((q) => q.finished).length, time: p.finishTime });
-                  if ([...r.players.values()].every((q) => q.finished)) finishRace(r);
-                }
+            const nearStart = prev > n - gateEvery || prev < gateEvery * 0.5;
+            const crossed = nearStart && ((prev > n - gateEvery && idx < gateEvery) || (prev < gateEvery * 0.5 && idx > n - gateEvery * 0.5));
+            if (crossed && p.sectors.size >= 6) {
+              const now = Date.now();
+              const t = p.lapStart ? now - p.lapStart : 0;
+              p.sectors = new Set();
+              p.cp = -1;
+              p.lap = (p.lap || 0) + 1;
+              p.lapStart = now;
+              if (t > 3000) {
+                p.lapTimes.push(t);
+                p.best = p.best == null ? t : Math.min(p.best, t);
+                broadcast(r, { t: 'lap', id: p.id, name: p.name, lap: p.lap, time: t, best: p.best });
+              }
+              if (p.lap > r.race.laps) {
+                p.finished = true;
+                p.finishTime = now - r.race.startedAt;
+                broadcast(r, { t: 'event', kind: 'finish', id: p.id, name: p.name, position: [...r.players.values()].filter((q) => q.finished).length, time: p.finishTime });
+                if ([...r.players.values()].every((q) => q.finished)) finishRace(r);
               }
             }
           }
