@@ -1,0 +1,601 @@
+[
+ {
+  "id": "1988_lamborghini_countach",
+  "label": "Countach 25th",
+  "fullName": "1988 Lamborghini Countach",
+  "klass": "A",
+  "file": "1988_lamborghini_countach.glb",
+  "model": {
+   "min": [
+    -1.0599,
+    -0.0062,
+    -2.1237
+   ],
+   "max": [
+    1.0599,
+    1.0654,
+    2.086
+   ],
+   "size": [
+    2.1198,
+    1.0716,
+    4.2097
+   ]
+  },
+  "realLength": 4.5,
+  "realWidth": 2.266,
+  "realHeight": 1.146,
+  "unitsPerMeter": 0.9355,
+  "widthScale": 1,
+  "wheelBase": 2.632,
+  "trackWidth": 1.903,
+  "wheelRadius": 0.324,
+  "rig": null,
+  "rigSource": "partial(0)",
+  "rigTrust": "fallback",
+  "wheelCenters": null,
+  "groundY": -0.0062,
+  "facesForwardNegZ": true,
+  "yawOffsetDeg": 0
+ },
+ {
+  "id": "1988_bmw_m3_evolution_ii_e30_1",
+  "label": "M3 E30 Evo II",
+  "fullName": "1988 BMW M3 Evolution II",
+  "klass": "B",
+  "file": "1988_bmw_m3_evolution_ii_e30_1.glb",
+  "model": {
+   "min": [
+    -0.0091,
+    0,
+    -0.0227
+   ],
+   "max": [
+    0.0091,
+    0.0158,
+    0.0216
+   ],
+   "size": [
+    0.0181,
+    0.0158,
+    0.0443
+   ]
+  },
+  "realLength": 4.8,
+  "realWidth": 1.962,
+  "realHeight": 1.714,
+  "unitsPerMeter": 0.0092,
+  "widthScale": 1,
+  "wheelBase": 2.796,
+  "trackWidth": 1.539,
+  "wheelRadius": 0.336,
+  "rig": {
+   "fl": "3DWheel Rear R_37",
+   "fr": "3DWheel Rear L_26",
+   "rl": "3DWheel Front R_15",
+   "rr": "3DWheel Front L_4",
+   "frontZ": -0.0121,
+   "rearZ": 0.0137,
+   "leftX": -0.0071,
+   "rightX": 0.0071,
+   "radius": 0.0031
+  },
+  "rigSource": "name",
+  "rigTrust": "rig",
+  "wheelCenters": {
+   "fl": [
+    -0.007185217318959932,
+    0.003045848303373054,
+    -0.01208999969684655
+   ],
+   "fr": [
+    0.0071894820311982875,
+    0.003045848126325419,
+    -0.012089999643936755
+   ],
+   "rl": [
+    -0.0070653329336396765,
+    0.003050566118346923,
+    0.01373299920334083
+   ],
+   "rr": [
+    0.007069841428869715,
+    0.003050565871382388,
+    0.013732999256260703
+   ]
+  },
+  "groundY": 0,
+  "facesForwardNegZ": true,
+  "yawOffsetDeg": 0
+ },
+ {
+  "id": "2001_bmw_m3_gtr",
+  "label": "M3 GTR",
+  "fullName": "2001 BMW M3 GTR",
+  "klass": "A",
+  "file": "2001_bmw_m3_gtr.glb",
+  "model": {
+   "min": [
+    -0.9604,
+    -0.0976,
+    -2.2076
+   ],
+   "max": [
+    0.9604,
+    1.4207,
+    2.4399
+   ],
+   "size": [
+    1.9208,
+    1.5183,
+    4.6475
+   ]
+  },
+  "realLength": 4.5,
+  "realWidth": 1.86,
+  "realHeight": 1.47,
+  "unitsPerMeter": 1.0328,
+  "widthScale": 1,
+  "wheelBase": 2.644,
+  "trackWidth": 1.562,
+  "wheelRadius": 0.241,
+  "rig": {
+   "fl": "Object_304#RR",
+   "fr": "Object_260#RL",
+   "rl": "Object_40#FL",
+   "rr": "Object_284#FR",
+   "frontZ": -1.1138,
+   "rearZ": 1.6174,
+   "leftX": -0.0012,
+   "rightX": -0.0012,
+   "radius": 0.2487
+  },
+  "rigSource": "geometric",
+  "rigTrust": "rig",
+  "wheelCenters": {
+   "fl": [
+    0.8069042889162799,
+    0.23808760265441722,
+    -1.114066712458495
+   ],
+   "fr": [
+    -0.8092959752463698,
+    0.23707751213614386,
+    -1.1134936203026704
+   ],
+   "rl": [
+    -0.8092959752463703,
+    0.23231606433607577,
+    1.6173328872621149
+   ],
+   "rr": [
+    0.8069042889162794,
+    0.23332617392783503,
+    1.6174356831527064
+   ]
+  },
+  "groundY": -0.0976,
+  "facesForwardNegZ": true,
+  "yawOffsetDeg": 0
+ },
+ {
+  "id": "2013_mansory_carbonado_lamborghini_aventador",
+  "label": "Aventador Carbonado",
+  "fullName": "2013 Mansory Carbonado Aventador",
+  "klass": "S",
+  "file": "2013_mansory_carbonado_lamborghini_aventador.glb",
+  "model": {
+   "min": [
+    -0.0113,
+    -0.0003,
+    -0.0246
+   ],
+   "max": [
+    0.0113,
+    0.0112,
+    0.0241
+   ],
+   "size": [
+    0.0227,
+    0.0114,
+    0.0487
+   ]
+  },
+  "realLength": 4.6,
+  "realWidth": 2.142,
+  "realHeight": 1.079,
+  "unitsPerMeter": 0.0106,
+  "widthScale": 1,
+  "wheelBase": 2.55,
+  "trackWidth": 1.643,
+  "wheelRadius": 0.331,
+  "rig": {
+   "fl": "3DWheel Rear L",
+   "fr": "3DWheel Rear R",
+   "rl": "3DWheel Front L",
+   "rr": "3DWheel Front R",
+   "frontZ": -0.0143,
+   "rearZ": 0.0127,
+   "leftX": 0.0087,
+   "rightX": -0.0087,
+   "radius": 0.0035
+  },
+  "rigSource": "name",
+  "rigTrust": "rig",
+  "wheelCenters": {
+   "fl": [
+    0.008601853418837856,
+    0.003309963485307023,
+    -0.01433999983206391
+   ],
+   "fr": [
+    -0.00859818534908029,
+    0.0033099634853107985,
+    -0.014339999831472605
+   ],
+   "rl": [
+    0.008802340480748532,
+    0.003089756863504222,
+    0.012729999734535813
+   ],
+   "rr": [
+    -0.00880072281072498,
+    0.0030897568635235234,
+    0.012729999737558579
+   ]
+  },
+  "groundY": -0.0003,
+  "facesForwardNegZ": true,
+  "yawOffsetDeg": 0
+ },
+ {
+  "id": "2017_lamborghini_huracan_mansory",
+  "label": "Huracán Mansory",
+  "fullName": "2017 Lamborghini Huracán",
+  "klass": "S",
+  "file": "2017_lamborghini_huracan_mansory.glb",
+  "model": {
+   "min": [
+    -0.0112,
+    -0.0001,
+    -0.0211
+   ],
+   "max": [
+    0.0112,
+    0.0115,
+    0.0236
+   ],
+   "size": [
+    0.0223,
+    0.0116,
+    0.0448
+   ]
+  },
+  "realLength": 4.6,
+  "realWidth": 2.292,
+  "realHeight": 1.19,
+  "unitsPerMeter": 0.0097,
+  "widthScale": 1,
+  "wheelBase": 2.691,
+  "trackWidth": 1.926,
+  "wheelRadius": 0.349,
+  "rig": {
+   "fl": "3DWheel Rear L",
+   "fr": "3DWheel Rear R",
+   "rl": "3DWheel Front R",
+   "rr": "3DWheel Front L",
+   "frontZ": -0.0131,
+   "rearZ": 0.0131,
+   "leftX": -0.0001,
+   "rightX": 0.0001,
+   "radius": 0.0034
+  },
+  "rigSource": "name",
+  "rigTrust": "rig",
+  "wheelCenters": {
+   "fl": [
+    0.008074202696408198,
+    0.003418503108305479,
+    -0.013142220084170542
+   ],
+   "fr": [
+    -0.008074202696296435,
+    0.0034185025081645273,
+    -0.013139779868680795
+   ],
+   "rl": [
+    -0.008335346304938743,
+    0.003249943773337261,
+    0.013075999918204642
+   ],
+   "rr": [
+    0.008335346305185377,
+    0.0032499437637505137,
+    0.013075999921351666
+   ]
+  },
+  "groundY": -0.0001,
+  "facesForwardNegZ": true,
+  "yawOffsetDeg": 0
+ },
+ {
+  "id": "2019_mansory_venatus_lamborghini_urus",
+  "label": "Urus Venatus",
+  "fullName": "2019 Mansory Venatus Urus",
+  "klass": "B",
+  "file": "2019_mansory_venatus_lamborghini_urus.glb",
+  "model": {
+   "min": [
+    -0.0107,
+    -0.0001,
+    -0.026
+   ],
+   "max": [
+    0.0111,
+    0.0164,
+    0.0259
+   ],
+   "size": [
+    0.0218,
+    0.0165,
+    0.0519
+   ]
+  },
+  "realLength": 4.8,
+  "realWidth": 2.017,
+  "realHeight": 1.527,
+  "unitsPerMeter": 0.0108,
+  "widthScale": 1,
+  "wheelBase": 2.774,
+  "trackWidth": 1.627,
+  "wheelRadius": 0.37,
+  "rig": {
+   "fl": "3DWheel Rear L",
+   "fr": "3DWheel Rear R",
+   "rl": "3DWheel Front L",
+   "rr": "3DWheel Front R",
+   "frontZ": -0.0149,
+   "rearZ": 0.0151,
+   "leftX": 0.0088,
+   "rightX": -0.0088,
+   "radius": 0.004
+  },
+  "rigSource": "name",
+  "rigTrust": "rig",
+  "wheelCenters": {
+   "fl": [
+    0.00881363107566175,
+    0.0038868070923816335,
+    -0.014949999713525175
+   ],
+   "fr": [
+    -0.008813008087401509,
+    0.0038868070923016515,
+    -0.014949999712564976
+   ],
+   "rl": [
+    0.008775893122562594,
+    0.003886764421762788,
+    0.015119999309182175
+   ],
+   "rr": [
+    -0.008773365562621092,
+    0.003886764416272967,
+    0.015119999310356081
+   ]
+  },
+  "groundY": -0.0001,
+  "facesForwardNegZ": true,
+  "yawOffsetDeg": 0
+ },
+ {
+  "id": "rolls-royce_2020_mansory_wraith",
+  "label": "Wraith Mansory",
+  "fullName": "2020 Mansory Wraith",
+  "klass": "C",
+  "file": "rolls-royce_2020_mansory_wraith.glb",
+  "model": {
+   "min": [
+    -0.1548,
+    -0.0022,
+    -0.3706
+   ],
+   "max": [
+    0.1548,
+    0.2198,
+    0.3931
+   ],
+   "size": [
+    0.3097,
+    0.2219,
+    0.7637
+   ]
+  },
+  "realLength": 5.6,
+  "realWidth": 2.271,
+  "realHeight": 1.627,
+  "unitsPerMeter": 0.1364,
+  "widthScale": 1,
+  "wheelBase": 3.313,
+  "trackWidth": 1.648,
+  "wheelRadius": 0.324,
+  "rig": {
+   "fl": "polySurface338_lambert2_0#RL",
+   "fr": "polySurface337_lambert2_0#RR",
+   "rl": "polySurface318_lambert2_0#FL",
+   "rr": "polySurface317_lambert2_0#FR",
+   "frontZ": -0.1951,
+   "rearZ": 0.2567,
+   "leftX": -0.1124,
+   "rightX": 0.1124,
+   "radius": 0.0442
+  },
+  "rigSource": "geometric",
+  "rigTrust": "rig",
+  "wheelCenters": {
+   "fl": [
+    -0.11241666542552409,
+    0.05366112112266301,
+    -0.1950805715826025
+   ],
+   "fr": [
+    0.11241666542552409,
+    0.05366112112266301,
+    -0.1950805715826025
+   ],
+   "rl": [
+    -0.11241666542552409,
+    0.053661121122662914,
+    0.25665962599233616
+   ],
+   "rr": [
+    0.11241666542552409,
+    0.053661121122662914,
+    0.25665962599233616
+   ]
+  },
+  "groundY": -0.0022,
+  "facesForwardNegZ": true,
+  "yawOffsetDeg": 0
+ },
+ {
+  "id": "rolls_royce_ghost",
+  "label": "Ghost",
+  "fullName": "Rolls-Royce Ghost",
+  "klass": "C",
+  "file": "rolls_royce_ghost.glb",
+  "model": {
+   "min": [
+    -0.4037,
+    -0.2913,
+    -1
+   ],
+   "max": [
+    0.4037,
+    0.2913,
+    1
+   ],
+   "size": [
+    0.8073,
+    0.5826,
+    2
+   ]
+  },
+  "realLength": 5.6,
+  "realWidth": 2.261,
+  "realHeight": 1.631,
+  "unitsPerMeter": 0.3571,
+  "widthScale": 1,
+  "wheelBase": 3.407,
+  "trackWidth": 1.718,
+  "wheelRadius": 0.291,
+  "rig": {
+   "fl": "defaultMaterial#RR",
+   "fr": "defaultMaterial#RL",
+   "rl": "defaultMaterial#FR",
+   "rr": "defaultMaterial#FL",
+   "frontZ": -0.5559,
+   "rearZ": 0.6608,
+   "leftX": 0.3068,
+   "rightX": -0.3068,
+   "radius": 0.104
+  },
+  "rigSource": "geometric",
+  "rigTrust": "rig",
+  "wheelCenters": {
+   "fl": [
+    0.30678901076316833,
+    -0.13391632764561445,
+    -0.5558870046262905
+   ],
+   "fr": [
+    -0.30678901076316833,
+    -0.13391632764635764,
+    -0.5558700024013683
+   ],
+   "rl": [
+    0.30678901076316833,
+    -0.15346828383775935,
+    0.6607919864328629
+   ],
+   "rr": [
+    -0.30678901076316833,
+    -0.13391638082908724,
+    0.6608089746112646
+   ]
+  },
+  "groundY": -0.2913,
+  "facesForwardNegZ": true,
+  "yawOffsetDeg": 0
+ },
+ {
+  "id": "rollsroyce_phantom",
+  "label": "Phantom",
+  "fullName": "Rolls-Royce Phantom",
+  "klass": "C",
+  "file": "rollsroyce_phantom.glb",
+  "model": {
+   "min": [
+    -0.6894,
+    0.0207,
+    -2.4533
+   ],
+   "max": [
+    1.0831,
+    1.4219,
+    2.4712
+   ],
+   "size": [
+    1.7725,
+    1.4011,
+    4.9246
+   ]
+  },
+  "realLength": 5.6,
+  "realWidth": 2.016,
+  "realHeight": 1.593,
+  "unitsPerMeter": 0.8794,
+  "widthScale": 1,
+  "wheelBase": 3.421,
+  "trackWidth": 1.654,
+  "wheelRadius": 0.384,
+  "rig": {
+   "fl": "Object_38#RL",
+   "fr": "Object_36#RR",
+   "rl": "Object_30#FL",
+   "rr": "Object_34#FR",
+   "frontZ": -1.2698,
+   "rearZ": 1.7388,
+   "leftX": -0.5347,
+   "rightX": 0.92,
+   "radius": 0.3375
+  },
+  "rigSource": "geometric",
+  "rigTrust": "rig",
+  "wheelCenters": {
+   "fl": [
+    -0.5338033118270928,
+    0.3582099264772023,
+    -1.2697573902638482
+   ],
+   "fr": [
+    0.9199753105353565,
+    0.3582099264772023,
+    -1.2697573902638482
+   ],
+   "rl": [
+    -0.5355827710637726,
+    0.3582099264772023,
+    1.7387922931826125
+   ],
+   "rr": [
+    0.9199753105353565,
+    0.3582099264772023,
+    1.7387922931826125
+   ]
+  },
+  "groundY": 0.0207,
+  "facesForwardNegZ": true,
+  "yawOffsetDeg": 0
+ }
+]
