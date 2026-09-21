@@ -1,0 +1,31 @@
+{
+  "name": "cyberkhyal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CyberKhyal - online multiplayer street racing on the Moscow City circuit. Room codes, deploy, race.",
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "next build",
+    "start": "node server.mjs",
+    "lint": "next lint",
+    "bake:arena": "node tools/gen-arena.mjs sports_car_racing_moscow.glb 14",
+    "bake:cars": "node tools/bake-cars.mjs",
+    "bake:track": "node tools/circuit.mjs",
+    "bake": "npm run bake:arena && npm run bake:cars && npm run bake:track"
+  },
+  "dependencies": {
+    "next": "15.5.25",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "three": "0.171.0",
+    "ws": "8.18.0",
+    "@react-three/fiber": "9.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "@types/react": "19.0.7",
+    "@types/react-dom": "19.0.3",
+    "@types/three": "0.171.0",
+    "typescript": "5.7.3"
+  }
+}
